@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos - Jaime's Shop</title>
+    <style>
+        /* Estilos generales para el catálogo */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .product-list {
+            padding: 20px;
+            margin: 20px;
+            display: block; /* Cambié esto a 'block' para que los productos estén en una columna */
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .product {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 100%; /* Asegura que los productos se alineen verticalmente */
+        }
+
+        .product img {
+            max-width: 300px; /* Ajustado para que las imágenes no sean tan grandes */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .product p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .product .price {
+            font-size: 18px;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Productos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-list">
+        <!-- Producto 1 -->
+        <div class="product">
+            <img src="Img/camisetadeportiva.jpg" alt="Camiseta Deportiva">
+            <h3>Camiseta Deportiva</h3>
+            <p>Camiseta ligera de algodón para tus entrenamientos o para el día a día.</p>
+            <p class="price">Bs.75</p>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product">
+            <img src="Img/jeansfit.jpg" alt="Jeans Slim Fit">
+            <h3>Jeans Slim Fit</h3>
+            <p>Jeans ajustados de mezclilla, perfectos para cualquier ocasión.</p>
+            <p class="price">Bs.120</p>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product">
+            <img src="Img/chaquetavintage.jpg" alt="Chaqueta de Cuero Vintage">
+            <h3>Chaqueta de Cuero Vintage</h3>
+            <p>Chaqueta de cuero auténtico, con un estilo clásico para otoño e invierno.</p>
+            <p class="price">Bs.250</p>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product">
+            <img src="Img/vestidodegala.jpg" alt="Vestido de Gala">
+            <h3>Vestido de Gala</h3>
+            <p>Elegante vestido largo ideal para eventos formales y galas.</p>
+            <p class="price">Bs.320</p>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="product">
+            <img src="Img/zapatillasrunning.jpg" alt="Zapatillas Running">
+            <h3>Zapatillas Running</h3>
+            <p>Zapatillas deportivas cómodas y livianas para corredores.</p>
+            <p class="price">Bs.180</p>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="product">
+            <img src="Img/bufandadelana.jpg" alt="Bufanda de Lana">
+            <h3>Bufanda de Lana Teñida</h3>
+            <p>Bufanda suave de lana, perfecta para las frías tardes de invierno.</p>
+            <p class="price">Bs.45</p>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="product">
+            <img src="Img/sombrerodeplaya.jpg" alt="Sombrero de Playa">
+            <h3>Sombrero de Playa</h3>
+            <p>Sombrero de paja para protegerte del sol mientras disfrutas del verano.</p>
+            <p class="price">Bs.50</p>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="product">
+            <img src="Img/guantestermicos.jpg" alt="Guantes Térmicos">
+            <h3>Guantes Térmicos</h3>
+            <p>Guantes de lana, ideales para proteger tus manos del frío.</p>
+            <p class="price">Bs.35</p>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="product">
+            <img src="Img/short.jpg" alt="Short de Entrenamiento">
+            <h3>Short de Entrenamiento</h3>
+            <p>Short cómodo y transpirable para hacer ejercicio o deportes.</p>
+            <p class="price">Bs.65</p>
+        </div>
+
+        <!-- Producto 10 -->
+        <div class="product">
+            <img src="Img/pantalon.jpg" alt="Pantalón Casual">
+            <h3>Pantalón Casual</h3>
+            <p>Pantalón de tela ligera, cómodo para el día a día.</p>
+            <p class="price">Bs.100</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Ropa. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
